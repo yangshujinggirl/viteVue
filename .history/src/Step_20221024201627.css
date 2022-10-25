@@ -1,0 +1,48 @@
+.status-popver .van-popover__action{
+  padding: 0 10px ;
+  margin: 0;
+  width: auto;
+}
+.van-popover__content {
+  /* width: 115px; */
+}
+.van-popover__action {
+  width: auto;
+}
+.van-popover__action-text {
+  width: 120px;
+  height: 32px !important;
+  color: #fff;
+  position: relative;
+  font-size: 16px;
+  background: url('./assets//btn_bg1.png') no-repeat left top;
+  background-size: contain;
+}
+.van-popover__action-text:before{
+  position:absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  content:'';
+  width: 20px;
+  height: 20px;
+  border-radius: 2px;
+}
+.van-hairline--bottom:after {
+  border: 0;
+}
+.icon0 .van-popover__action-text:before {
+  background: #f42f5e;
+}
+.icon1 .van-popover__action-text:before {
+  background: #e2bd23;
+}
+.icon2 .van-popover__action-text:before {
+  background: #80d681;
+}
+.icon3 .van-popover__action-text:before {
+  background: #5cb5ff;
+}
+.icon4 .van-popover__action-text:before {
+  background: #3086fd;
+}

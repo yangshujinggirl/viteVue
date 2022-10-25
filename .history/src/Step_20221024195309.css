@@ -1,0 +1,22 @@
+.van-popover__action-text {
+  position: relative;
+}
+.van-popover__action-text:before{
+  position:absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  content:'';
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+}
+.van-hairline--bottom:after {
+  border: 0;
+}
+.icon0 .van-popover__action-text:before {
+  background: #f42f5e;
+}
+.icon1 .van-popover__action-text:before {
+  background: #e2bd23;
+}

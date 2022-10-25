@@ -1,0 +1,32 @@
+<script setup>
+
+</script>
+
+<template>
+  <div class="wrap">
+      <img src="./assets/step2_img0.png" class="main_img" alt="Vue logo" />
+  </div>
+</template>
+
+<style scoped>
+.wrap {
+  width: 100%;
+  height: 100vh;
+  background: url('./assets/bg1.png');
+  background-size: cover;
+  position: relative;
+}
+.main_img {
+  width: 375px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2rem #646cffaa);
+}
+.logo.vue:hover {
+  filter: drop-shadow(0 0 2rem #42b883aa);
+}
+</style>

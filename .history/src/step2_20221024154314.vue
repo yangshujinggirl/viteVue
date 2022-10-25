@@ -1,0 +1,40 @@
+<script setup>
+    import { ref } from 'vue';
+    const username = ref('');
+    const onSubmit = (values) => {
+      console.log('submit', values);
+    };
+</script>
+
+<template>
+  <div class="wrap">
+      <img src="./assets/step2_img0.png" class="main_img" alt="Vue logo" />
+      <van-form @submit="onSubmit">
+        <van-cell-group inset>
+          <van-field
+            v-model="username"
+            placeholder="用户名"
+            :rules="[{ required: true, message: '请填写用户名' }]"
+          />
+        </van-cell-group>
+        <div style="margin: 16px;">
+          <van-button round block type="primary" native-type="submit">
+            点击开始
+          </van-button>
+        </div>
+      </van-form>
+  </div>
+</template>
+
+<style scoped>
+.wrap {
+  width: 100%;
+  height: 100vh;
+  background: url('./assets/bg2.png');
+  background-size: cover;
+  position: relative;
+}
+.main_img {
+  width: 300px;
+}
+</style>

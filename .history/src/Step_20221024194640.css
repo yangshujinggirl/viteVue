@@ -1,0 +1,17 @@
+.van-popover__action-text {
+  position: relative;
+}
+.icon0:before{
+  position:absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  content:'';
+  width: 10px;
+  height: 10px;
+  background: red;
+  border-radius: 2px;
+}
+.van-hairline--bottom:after {
+  border: 0;
+}
